@@ -10,7 +10,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "  wayeeeeeh it is done alkhawa deyali fehmtini ")
+		c.String(http.StatusOK, "  wayeeeeeh it is done alkhawa deyali fehmtini  alkhawa")
 	})
 
 	r.Run(":8888")
