@@ -14,7 +14,7 @@ variables:
   imageRepository: 'kaigo'
   containerRegistry: 'medonebag.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: 'lastest'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
