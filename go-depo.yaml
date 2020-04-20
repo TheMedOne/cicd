@@ -22,7 +22,7 @@ spec:
         spec:
             containers:
             - name: golangbox
-              image: medonebag.azurecr.io/themedone/cicd:latest
+              image: medonebag.azurecr.io/medonego:latest
               imagePullPolicy: Always
               ports:
               - containerPort: 8888
