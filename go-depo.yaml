@@ -10,7 +10,7 @@ metadata:
         app: goapp
         env: qa
 spec:
-    replicas: 5
+    replicas: 2
     selector:
         matchLabels:
             app: goapp 
@@ -23,6 +23,7 @@ spec:
             containers:
             - name: golangbox
               image: medonebag.azurecr.io/medonego:latest
+              imagePullPolicy: Always
               ports:
               - containerPort: 8888
                 name : goapp
