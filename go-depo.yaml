@@ -22,7 +22,7 @@ spec:
         spec:
             containers:
             - name: golangbox
-              image: medonebag.azurecr.io/kaigoprod:latest
+              image: medonebag.azurecr.io/themedone/cicd:latest
               ports:
               - containerPort: 8888
                 name : goapp
@@ -45,3 +45,4 @@ spec:
                 
 
  
+
