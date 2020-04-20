@@ -10,7 +10,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "  Hello world k8s cluster --> Golang app server  production stage 1.0 without rollback")
+		c.String(http.StatusOK, "  Hello world k8s cluster --> Golang app server  production stage 1.0 update")
 	})
 
 	r.Run(":8888")
