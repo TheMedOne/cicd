@@ -10,7 +10,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "  Hello world k8s cluster --> Golang app server ")
+		c.String(http.StatusOK, "  Hello world k8s cluster --> Golang app server  production")
 	})
 
 	r.Run(":8888")
