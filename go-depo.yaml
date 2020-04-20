@@ -23,26 +23,12 @@ spec:
             containers:
             - name: golangbox
               image: medonebag.azurecr.io/medonego:latest
-              imagePullPolicy: Always
               ports:
               - containerPort: 8888
                 name : goapp
 
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: go-service
-  labels:
-    app: goapp
-spec:
- type : LoadBalancer
- selector:
-    app: goapp
- ports:
-    - port: 80
-      protocol: TCP
-      targetPort: 8888
+
+
                 
 
  
